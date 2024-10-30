@@ -10,10 +10,10 @@ import SwiftUI
 struct MainTabView: View {
     var body: some View {
         TabView{
-            Text("Feed")
+           feedView()
                 .tabItem { Image(systemName: "house") }
             
-            Text("Search")
+            SearchView()
                 .tabItem { Image(systemName: "magnifyingglass") }
             
             Text("Post")
@@ -22,7 +22,7 @@ struct MainTabView: View {
             Text("Notification")
                 .tabItem { Image(systemName: "heart") }
             
-            Text("Profile")
+            ProfileView()
                 .tabItem { Image(systemName: "person") }
         }
         .tint(.black)
